@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            background: url('https://plus.unsplash.com/premium_photo-1668196793119-f8fa2ee0d90a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=821&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 10px;
+            align-items: center;
+            height: 300px;
+            padding: 2px 20px;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* section::before {
+            content: "this is content before section";
+        } */
+
+        /* section::after {
+            content: "this is content after section";
+        } */
+
+        .navigation {
+            font-size: 25px;
+            display: flex;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        li {
+            list-style: none;
+            padding: 17px 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1>Welcome to Coding World!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non recusandae pariatur, libero rem perferendis
+            magni, culpa modi eum itaque nostrum doloremque dignissimos facere! Dolores error sed tenetur porro
+            totam et aperiam quos, alias, consequatur quis quia at eius facilis non!</p>
+    </section>
+    <hr>
+</body>
+
+</html>

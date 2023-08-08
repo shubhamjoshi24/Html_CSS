@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #firstpara {
+            background-color: red;
+            height: 100px;
+            width: 500px;
+            border: solid green 4px;
+            /* border-width: 5px;
+            border-color: green;
+            border-style: solid; */
+            border-radius: 10px;
+
+        }
+
+        #secondpara {
+            background-color: rgb(130, 227, 224);
+            height: 100px;
+            width: 500px;
+            border-top: 4px solid rgb(231, 19, 231);
+            border-right: 4px solid rgba(13, 215, 43, 0.731);
+            border-left: 4px solid rgba(90, 31, 227, 0.804);
+            border-bottom: 4px solid rgb(236, 12, 12);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 32px;
+
+
+        }
+
+        #thirdpara {
+            height: 500px;
+            width: 500px;
+            border: 5px solid green;
+            background-image: url('chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/images/logo-vertical.svg');
+            background-repeat: no-repeat;
+            /* repeat-x and repeat-y will make image repeat on x and y axis*/
+            /* background-position: 33px 122px; */
+            /* background-position: top left; */
+            /* background-position: bottom right; */
+            /* background-position: center center; */
+            /* background-position: top center; */
+            background-position: 60px bottom;
+            /* first is x axis and second is y axis*/
+        }
+    </style>
+</head>
+
+<body>
+    <h3>First Heading</h3>
+    <p id="firstpara">This is a Paragraph</p>
+
+    <h3>Second Heading</h3>
+    <p id="secondpara">This is a Second Paragraph</p>
+
+    <h3>Third Heading</h3>
+    <p id="thirdpara">This is a Third Paragraph</p>
+</body>
+
+</html>

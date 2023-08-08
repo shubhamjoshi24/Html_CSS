@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        .box {
+            padding: 20px 30px;
+            border: 2px solid black;
+            background-color: rgb(236, 203, 230);
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="navbar" class="box">
+            Home About Services Contact Us
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia officia assumenda fugiat dolorum,
+            molestiae eius blanditiis voluptas, repellat similique illum id animi voluptatem magnam odit libero
+            laudantium eligendi iusto.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste officia sequi sapiente vero tempore, ea
+            repellat laboriosam corporis nulla temporibus pariatur natus voluptatem, neque culpa reprehenderit dolorem
+            hic. Omnis eos laudantium quibusdam? Adipisci reiciendis, ex obcaecati unde ut illo reprehenderit aut quia
+            voluptate ab saepe molestias ipsam dignissimos ipsa ad quaerat quisquam repellat doloremque aperiam
+            blanditiis enim? Omnis est laborum quia praesentium. Fuga ipsum sed expedita quos sunt, harum Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Iste harum at vitae minima magni nihil, incidunt blanditiis
+            voluptate accusantium error! officia saepe
+            veritatis id excepturi minima mollitia ex temporibus? Hic ex mollitia odit maiores corporis eum, delectus
+
+        </div>
+        <div id="aside" class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo itaque voluptatem doloremque?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste officia sequi sapiente vero tempore, ea
+            repellat laboriosam corporis nulla temporibus pariatur natus voluptatem, neque culpa reprehenderit dolorem
+            hic. Omnis eos laudantium quibusdam? Adipisci reiciendis, ex obcaecati unde ut illo reprehenderit aut quia
+            voluptate ab saepe molestias ipsam dignissimos ipsa ad quaerat quisquam repellat doloremque aperiam
+            blanditiis enim? Omnis est laborum quia praesentium. Fuga ipsum sed expedita quos sunt, harum officia saepe
+            veritatis id excepturi minima mollitia ex temporibus? Hic ex mollitia odit maiores corporis eum, delectus
+            dignissimos voluptates recusandae numquam reiciendis dolorum? Tempora laboriosam repellendus magnam quod
+            asperiores ab ratione porro rem molestiae? Reprehenderit distinctio excepturi dolorem consectetur tempore
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quasi autem. Delectus recusandae porro
+            quos, non consequatur labore distinctio iste.
+
+        </div>
+
+        <div id="footer" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut commodi expedita sunt.
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

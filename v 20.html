@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            /* universal selector *()  */
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(232, 202, 229);
+        }
+
+        .container {
+            background-color: rgb(221, 205, 255);
+            border: 3px solid rgb(63, 10, 238);
+            /* padding: 50px; */
+
+            /* We can set margin/padding for top, right, bottom and left like this */
+
+            /* padding-top: 89px;
+            padding-right: 49px;
+            padding-bottom: 79px;
+            padding-left: 83px; */
+
+            /* margin-top: 89px;
+            margin-right: 49px;
+            margin-bottom: 79px;
+            margin-left: 83px; */
+
+            /* margin = top right bottom left */
+            /* margin: 50px 70px 34px 90px; */
+
+            /* padding = top right bottom left */
+            /* padding: 50px 70px 34px 90px; */
+
+            /* for giving top/bottom and left/right in one line */
+            padding: 34px 25px;
+            margin: 14px 25px;
+            border-radius: 23px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>CSS Box Model, Margin and Padding</h3>
+        <p id="first">This is Paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio tenetur
+            expedita minima veniam debitis quod, aperiam sed? Sequi, reprehenderit libero unde sint odit reiciendis
+            laudantium odio quasi magnam distinctio ad.
+        </p>
+    </div>
+    <div class="container">
+        <h3>CSS Box Model, Margin and Padding</h3>
+        <p id="second">This is Paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio tenetur
+            expedita minima veniam debitis quod, aperiam sed? Sequi, reprehenderit libero unde sint odit reiciendis
+            laudantium odio quasi magnam distinctio ad.
+        </p>
+    </div>
+    <div class="container">
+        <h3>CSS Box Model, Margin and Padding</h3>
+        <p id="third">This is Paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio tenetur
+            expedita minima veniam debitis quod, aperiam sed? Sequi, reprehenderit libero unde sint odit reiciendis
+            laudantium odio quasi magnam distinctio ad.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .card {
+            /* border: 2px solid red; */
+            padding: 23px 12px;
+            margin: 25px 25px;
+            background-color: aqua;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 12px green; */
+            /* box-shadow: -10px -12px green; */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 5px 7px 30px green; */
+            /* box-shadow: -5px -7px 30px green; */
+
+            /* box-shadow: offset-x offset-y blur-radius spread radius color; */
+            /* box-shadow: 5px 7px 30px 5px green; */
+            /* box-shadow: -5px -7px 30px 5px green; */
+
+            /* box-shadow inside the box */
+            box-shadow: inset 3px 5px green;
+
+            /*Multiple box-shadow: ; */
+            box-shadow: 3px 5px green, 4px 6px yellow;
+
+        }
+
+        .card h2 {
+            /* text-shadow: 3px 2px white; */
+            /* text-shadow: 3px 2px 2px white; */
+            text-shadow: -3px -2px 2px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is HTML Tutorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusantium obcaecati, nam, vero
+                sequi dolorum porro praesentium, fugiat modi nemo quisquam? Aperiam, velit totam fuga aliquid
+                consequatur, atque ut illum provident maxime voluptates error?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is CSS Tutorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusantium obcaecati, nam, vero
+                sequi dolorum porro praesentium, fugiat modi nemo quisquam? Aperiam, velit totam fuga aliquid
+                consequatur, atque ut illum provident maxime voluptates error?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is JavaScript Tutorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusantium obcaecati, nam, vero
+                sequi dolorum porro praesentium, fugiat modi nemo quisquam? Aperiam, velit totam fuga aliquid
+                consequatur, atque ut illum provident maxime voluptates error?</p>
+        </div>
+    </div>
+</body>
+
+</html>

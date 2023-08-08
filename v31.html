@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+    <style>
+        h1 {
+            color: rgb(0, 0, 0);
+            background-color: cyan;
+            text-align: center;
+            font-weight: lighter;
+        }
+
+        /* if p is contained by any li which is contained by div */
+        /* div li p {
+            background-color: green;
+            color: yellow;
+            font-weight: bold;
+        } */
+
+        /* if p is right inside div then this CSS property applied */
+        /* div>p {
+            background-color: green;
+            color: yellow;
+            font-weight: bold;
+        } */
+
+        /* if p is right after div i.e p is the next sibling of div */
+        /* div+p {
+            background-color: rgb(158, 20, 128);
+            color: rgb(53, 216, 21);
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>This is tutorial no. 31- More on CSS Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is anoter paragraph inside list</p>
+                </li>
+                <li>this will not get affected</li>
+                <p>this is paragraph inside ul</p>
+            </ul>
+            <p>This is first Paragraph</p>
+        </div>
+        <p>This is second Paragraph</p>
+    </div>
+    <p>This is third Paragraph</p>
+
+</body>
+
+</html>

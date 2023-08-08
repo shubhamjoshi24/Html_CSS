@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        p {
+            /* 2 Examples of Element Selector*/
+            border: 2px solid red;
+        }
+
+        h3 {
+            color: red;
+            background-color: black;
+        }
+
+        /* ID Selector */
+        #secondpara {
+            /* .redElement { */
+            color: red;
+            background-color: black;
+        }
+
+        /* Class Selector */
+        .redElement {
+            color: red;
+            background-color: black;
+        }
+
+        /* The CSS Grouping Selector */
+        footer,
+        span {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p>Jane Street, Hudson River Trading, Qube Research & Technologies</p>
+    <p id="secondpara" class="redElement">Jane Street, Hudson River Trading, Qube Research & Technologies</p>
+    <p>Jane Street, Hudson River Trading, Qube Research & Technologies</p>
+    <div>
+        <p class="redElement">Jane Street, Qube Research & Technologies, Shubham DIV</p>
+    </div>
+    <span>this is span tag</span>
+    <footer>This is footer</footer>
+</body>
+
+</html>
